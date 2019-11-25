@@ -1,7 +1,7 @@
 # Fullstack Developer Task
 
-Create user management CRUD application.
-Every user can create own task.
+Create product management CRUD application.
+Every user can login and manage own product.
 
 Backend should be a RESTful API.
 
