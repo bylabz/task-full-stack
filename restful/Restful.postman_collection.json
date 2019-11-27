@@ -1,0 +1,553 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Restful",
+		"_postman_id": "2ab0b303-893e-258f-f4d0-ee3a66efcec4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"description": "",
+			"item": [
+				{
+					"name": "User List",
+					"request": {
+						"url": "http://localhost/test/task-full-stack/restful/public/api/user",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 5f80d60a9e24c2847628911b3e278720ec5331c173318bf92460ec332f98d7d3",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "User Detail",
+					"request": {
+						"url": "http://localhost/test/task-full-stack/restful/public/api/user/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 5f80d60a9e24c2847628911b3e278720ec5331c173318bf92460ec332f98d7d3",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "User Create",
+					"request": {
+						"url": {
+							"raw": "http://localhost/test/task-full-stack/restful/public/api/user?username=user1&name=User 1&email=user@mail.com&password=user12345&confirm_password=user12345&phone=12345&website=user.com&addr_street=street_1&addr_suite=suite_1&add_city=city_1&add_zip=zip_1&add_geo_lat=123&add_geo_lng=123&cpn_name=company_1&cpn_phrase=phrase_1&cpn_bs=bs_1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"test",
+								"task-full-stack",
+								"restful",
+								"public",
+								"api",
+								"user"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "user1",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "name",
+									"value": "User 1",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "user@mail.com",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "password",
+									"value": "user12345",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "confirm_password",
+									"value": "user12345",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "phone",
+									"value": "12345",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "website",
+									"value": "user.com",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "addr_street",
+									"value": "street_1",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "addr_suite",
+									"value": "suite_1",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "add_city",
+									"value": "city_1",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "add_zip",
+									"value": "zip_1",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "add_geo_lat",
+									"value": "123",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "add_geo_lng",
+									"value": "123",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "cpn_name",
+									"value": "company_1",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "cpn_phrase",
+									"value": "phrase_1",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "cpn_bs",
+									"value": "bs_1",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 5f80d60a9e24c2847628911b3e278720ec5331c173318bf92460ec332f98d7d3",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "User Edit",
+					"request": {
+						"url": {
+							"raw": "http://localhost/test/task-full-stack/restful/public/api/user/2?name=User 1 Edited",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"test",
+								"task-full-stack",
+								"restful",
+								"public",
+								"api",
+								"user",
+								"2"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "User 1 Edited",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 5f80d60a9e24c2847628911b3e278720ec5331c173318bf92460ec332f98d7d3",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "User Delete",
+					"request": {
+						"url": "http://localhost/test/task-full-stack/restful/public/api/user/2",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 5f80d60a9e24c2847628911b3e278720ec5331c173318bf92460ec332f98d7d3",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "User Import",
+					"request": {
+						"url": "http://localhost/test/task-full-stack/restful/public/api/user/import",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 5f80d60a9e24c2847628911b3e278720ec5331c173318bf92460ec332f98d7d3",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task",
+			"description": "",
+			"item": [
+				{
+					"name": "Task List",
+					"request": {
+						"url": "http://localhost/test/task-full-stack/restful/public/api/task",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 5f80d60a9e24c2847628911b3e278720ec5331c173318bf92460ec332f98d7d3",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Task Create",
+					"request": {
+						"url": {
+							"raw": "http://localhost/test/task-full-stack/restful/public/api/task?name=Task 1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"test",
+								"task-full-stack",
+								"restful",
+								"public",
+								"api",
+								"task"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Task 1",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 5f80d60a9e24c2847628911b3e278720ec5331c173318bf92460ec332f98d7d3",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Task Detail",
+					"request": {
+						"url": "http://localhost/test/task-full-stack/restful/public/api/task/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 5f80d60a9e24c2847628911b3e278720ec5331c173318bf92460ec332f98d7d3",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Task Edit",
+					"request": {
+						"url": {
+							"raw": "http://localhost/test/task-full-stack/restful/public/api/task/1?name=Task 1 Edited&start=2019-11-27",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"test",
+								"task-full-stack",
+								"restful",
+								"public",
+								"api",
+								"task",
+								"1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Task 1 Edited",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "start",
+									"value": "2019-11-27",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 5f80d60a9e24c2847628911b3e278720ec5331c173318bf92460ec332f98d7d3",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Task Delete",
+					"request": {
+						"url": "http://localhost/test/task-full-stack/restful/public/api/task/1",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 5f80d60a9e24c2847628911b3e278720ec5331c173318bf92460ec332f98d7d3",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"url": {
+					"raw": "http://localhost/test/task-full-stack/restful/public/api/auth/login?username=admin&password=admin12345",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"test",
+						"task-full-stack",
+						"restful",
+						"public",
+						"api",
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "admin",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "admin12345",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Credential",
+			"request": {
+				"url": {
+					"raw": "http://localhost/test/task-full-stack/restful/public/api/auth/credential?token=5f80d60a9e24c2847628911b3e278720ec5331c173318bf92460ec332f98d7d3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"test",
+						"task-full-stack",
+						"restful",
+						"public",
+						"api",
+						"auth",
+						"credential"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "5f80d60a9e24c2847628911b3e278720ec5331c173318bf92460ec332f98d7d3",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"url": "http://localhost/test/task-full-stack/restful/public/api/auth/logout",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 5f80d60a9e24c2847628911b3e278720ec5331c173318bf92460ec332f98d7d3",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
