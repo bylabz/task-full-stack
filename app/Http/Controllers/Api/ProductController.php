@@ -157,12 +157,23 @@ class ProductController extends Controller
     public function destroy($id)
     {
         try {
-            $product = Product::findOrFail($id);
-            $product->delete();
-            
+            $product = Product::where([
+                ['id', '=', $id],
+                ['owner', '=', Auth::user()->id],
+            ])->first();
+
+            if ($product) {
+                $product->delete();
+                return response()->json([
+                    'status' => 'success',
+                ], 200);
+            }
+
             return response()->json([
-                'status' => 'success',
-            ], 200);
+                'status' => 'error',
+                'errors' => 'bad request'
+            ], 400);
+
         } catch (\Exception $e) {
             return response()->json([
                 'status' => 'error',
