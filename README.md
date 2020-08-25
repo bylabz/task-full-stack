@@ -25,3 +25,14 @@ Add availability to import random user from https://jsonplaceholder.typicode.com
 - Structure! WE LOVE STRUCTURE!
 - Validate data.
 - Have fun!
+
+## Quickstart
+
+```
+$ git clone
+$ cp .env.example .env
+$ composer install
+$ php artisan key:gen
+$ php artisan migrate --seed
+$ php artisan serve
+```
