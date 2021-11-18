@@ -24,4 +24,5 @@ Add availability to import random user from https://jsonplaceholder.typicode.com
 - Security.
 - Structure! WE LOVE STRUCTURE!
 - Validate data.
+- Coding Standards
 - Have fun!
